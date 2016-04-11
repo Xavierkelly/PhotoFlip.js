@@ -7,6 +7,7 @@ A jquery plugin that allows you to dynamically change the background Image of a 
 [View Demo](http://Photoflip.Kelly.Tech) 
 
 ### External styling sheets that are needed:
-- Get Bootstrap
-- Jquery
-- Google Font
+- [Get Bootstrap](http://getbootstrap.com/)
+- [Jquery](https://jquery.com/)
+- [Google Font](https://www.google.com/fonts)
+
