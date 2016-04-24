@@ -11,7 +11,7 @@ A jquery plugin that allows you to dynamically change the background Image of a 
 - [Jquery](https://jquery.com/)
 - [Google Font](https://www.google.com/fonts)
 
-### How to Change dynamically background image of container or div with JavaScript
+### How to dynamically change background image of container or div with JavaScript
 
 ###### Create new array for image*/
 ```javascript 
