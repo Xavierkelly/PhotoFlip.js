@@ -39,8 +39,17 @@ document.body.style.backgroundImage = images[x];
 if (x<7) {
 x+=1;
 }
+
 else if (x=8) {
 x=0;
 }
 }
+```
+##### How to make your background image full screen
+```
+<style>
+#background{
+background-repeat: no-repeat;
+background-size: cover;}
+</style>
 ```
