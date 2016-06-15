@@ -1,0 +1,21 @@
+{
+  "name": "photoflip.js",
+  "version": "1.0.0",
+  "description": "A jQuery plugin that allows you to dynamically change the background image of a container or div.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xavierkelly/PhotoFlip.js.git"
+  },
+  "author": "Xavier J. Kelly",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Xavierkelly/PhotoFlip.js/issues"
+  },
+  "homepage": "https://github.com/Xavierkelly/PhotoFlip.js#readme",
+  "dependencies": {
+    "jquery": "^3.0.0"
+  }
+}
