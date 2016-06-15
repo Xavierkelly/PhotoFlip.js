@@ -12,6 +12,15 @@ p {
 	font-size: 100%;
 }
 
+a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #d4d4d4
+}
+
 iframe {
 	border: none;
 }
