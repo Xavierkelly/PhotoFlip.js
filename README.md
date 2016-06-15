@@ -1,55 +1,55 @@
 # PhotoFlip
-A jquery plugin that allows you to dynamically change the background Image of a container or div.
+A jquery plugin that allows you to dynamically change the background image of a container or div.
 
-### Example:
-![alt tag](http://www.kelly.tech/static/img/photoflip.png)
+### How to use PhotoFlip
 
-[View Demo](http://Photoflip.Kelly.Tech) 
+#### Using the demo
+To use the demo, you will need to
 
-### External styling sheets that are needed:
-- [Get Bootstrap](http://getbootstrap.com/)
-- [Jquery](https://jquery.com/)
-- [Google Font](https://www.google.com/fonts)
+- Clone or download the repo
+- Navigate to the repo location and run 'npm install' to resolve dependencies.
 
-### How to dynamically change background image of container or div with JavaScript
+#### Using the plugin in your projects
 
-###### Create new array for image*/
+###### Include the plugin in your page
+
+```html 
+<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./src/PhotoFlip.js"></script>
+```
+
+###### Create an array for the background images
 ```javascript 
-images = new Array;
+var images = new Array;
+images[0] = "url('./img/bg1.png')";
+images[1] = "url('./img/bg2.png')";
+images[2] = "url('./img/bg3.png')";
+images[3] = "url('./img/bg4.png')";
 ```
 
-###### Initialize with your image
+###### Initialize the plugin with any options
 ```javascript
-images[0] = "url('https://newevolutiondesigns.com/images/freebies/nature-hd-background-10.jpg')";
-images[1] = "url('http://hdwallpapersd.com/wp-content/uploads/2015/09/Blue-Nature-Background.jpg')";
-images[2] = "url('http://e2ua.com/data/wallpapers/29/WDF_767877.jpg')";
-images[3] = "url('https://wallpaperscraft.com/image/nature_mountains_sky_lake_clouds_81150_2048x1152.jpg')";
-images[4] = "url('http://www.twitrcovers.com/wp-content/uploads/2013/04/Mountains-Clouds-Landscapes-l.jpg')";
-images[5] = "url('http://www.wallpapersonview.com/wallpapers/4/landscape_wonderful_nature_quality_mountain_background_picture-120.jpg')";
-images[6] = "url('http://www.amazingwallpaperz.com/wp-content/uploads/Scenic-Mountain-Background-HD-Wallpapers.jpg')";
-images[7] = "url('http://cdn.pcwallart.com/images/wyoming-mountains-wallpaper-3.jpg')";
+$("#backgroundChanger").PhotoFlip({'interval' : 1000}, images);
 ```
 
-###### Set the interval between Image change
+That's it!
+
+### Options
+
+Three options are available for your customisation:
+
+- 'interval' : The interval of time between changes. Declared in milliseconds (3000 is 3 seconds).
+- 'backgroundSize' : CSS background size property. 
+- 'repeat' : CSS background repeat property. 
+
+###### Example
+
+Options are specified in the initialization method.
+
 ```javascript
-setInterval(function() {changeImage()},5000);
-x = 0;
-function changeImage() {
-document.body.style.backgroundImage = images[x];
-if (x<7) {
-x+=1;
-}
-
-else if (x=8) {
-x=0;
-}
-}
-```
-##### How to make your background image full screen
-```
-<style>
-#background{
-background-repeat: no-repeat;
-background-size: cover;}
-</style>
+$("#backgroundChanger").PhotoFlip({
+	'interval' : 1000,
+	'backgroundSize' : 'contain',
+	'repeat' : 'repeat'
+}, images);
 ```

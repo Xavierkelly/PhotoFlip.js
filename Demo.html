@@ -5,79 +5,78 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>PhotoFLIP.js</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 		<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-		<style>
-			body {
-			background-repeat: no-repeat;
-			background-size:cover;
-			background-color:#000000;
-			}
-		</style>
+		<link rel="stylesheet" href="style.css">
 	</head>
-	<body>
-		<nav class="navbar navbar-default navbar-fixed-top" style="background-color:#fff;">
-        <div class="container">
-        <div class=" col-sm-12 col-md-12 col-lg-12 navbar-header">
-        <div class="col-sm-12 col-md-12 col-lg-12">
-          <div class="col-xs-2 col-sm-4 col-md-6 col-lg-6" style="padding-bottom:5px;">
-          <a class="navbar-brand" href="/">
-            <img alt="Kelly Tech" height="25px" src="http://www.kelly.tech/static/img/kellytechlogo.png">
-          </a>
-          </div>
-          <div align="right" style="float:right;padding:15px;"class="col-xs-10 col-sm-8 col-md-6 col-lg-6">
-		  
-		<iframe src="https://ghbtns.com/github-btn.html?user=Xavierkelly&repo=BackFlip&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>              </div></div>
-        </div>
+		<body id="backgroundChanger">
+
+		<div class="navbar">
+			<a  href="http://www.kelly.tech">
+				<img src="./img/kellytechlogo.png" alt="Kelly.Tech Logo">
+			</a>
+
+			<iframe src="https://ghbtns.com/github-btn.html?user=Xavierkelly&repo=PhotoFlip&type=star&count=true" height="20"></iframe> 
 		</div>
-		</nav>
-		<div style=" padding:100px 20px 20px;height:100%;color:#ffffff;" class="col-md-12">
-			<center>
-				<h1 style="font-size:84px;margin:10px;padding:10px;" ><strong>PhotoFLIP</strong></h1>
-				<small>A jquery plugin that allows you to dynamically change the background Image of a container or div.</small>
-			<p><br><span style="font-size:11px">Created with Love by Xavier Kelly at Kelly.Tech &copy; 2016</span> <br><a class="twitter-follow-button" style="text-decoration:none;" data-show-count="true" data-show-screen-name="false" href="https://twitter.com/XavierKellyTech">Follow Me</a> </p>
-			<center>
-            <a style="color:#808080;text-decoration:none;" title="Star Me Now" href="https://github.com/Xavierkelly">
-              <i style="color:#ffffff;" class="fa fa-github fa-fw fa-lg "></i>
-            </a>
-            <a style="color:#808080;text-decoration:none;" title="Connect with Me Now" href="https://www.linkedin.com/in/xavier-kelly-453004a3"><i style="color:#ffffff;" class="fa fa-linkedin fa-fw fa-lg"></i>
-            </a> 
-            <a title="Subscribe to my Channel Now" style="color:#808080;text-decoration:none;" href="https://www.youtube.com/channel/UCQQ9KdZl80R78hZjb8Q_3NQ"><i style="color:#ffffff;" class="fa fa-youtube-play fa-fw fa-lg"></i></a> 
-          </center>
-			</center>
+
+		<div class="banner">
+			<div class="center">
+				<h1>
+					<strong>
+						PhotoFLIP
+					</strong>
+				</h1>
+				
+				<p>
+					A jQuery plugin that allows you to dynamically change the background image of a container or div.
+				</p>
+
+				<a href="http://github.com/Xavierkelly/PhotoFlip.js">
+					<button>See On GitHub</button>
+				</a>
+				<a href="http://www.kelly.tech/">
+					<button>Visit Kelly.Tech</button>
+				</a>
+
+				<p>
+					<small>
+							Created with Love by Xavier Kelly at Kelly.Tech &copy; 2016
+					</small>
+				</p>
+
+			<p>
+
+				<a class="twitter-follow-button" data-show-count="true" data-show-screen-name="false" href="https://twitter.com/XavierKellyTech">Follow Me</a> 
+
+			</p>
+
+			<div class="center">
+	            <a  title="Star Me" href="https://github.com/Xavierkelly">
+	              <i class="fa fa-github fa-fw fa-lg "></i>
+	            </a>
+	            <a  title="Connect With Me" href="https://www.linkedin.com/in/xavier-kelly-453004a3"><i class="fa fa-linkedin fa-fw fa-lg"></i>
+	            </a> 
+	            <a title="Subscribe to my Channel" href="https://www.youtube.com/channel/UCQQ9KdZl80R78hZjb8Q_3NQ"><i class="fa fa-youtube-play fa-fw fa-lg"></i></a> 
+	          </div>
+			</div>
 		</div>
+
 		<!-- Use jquery javascript -->
-		<script src="http://code.jquery.com/jquery-1.8.0.js"></script>
-		<!--Show image randomly through this js -->
+		<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="./src/PhotoFlip.js"></script>
+
 		<script type="text/javascript">
+
 			images = new Array;
-			images[0] = "url('http://orig11.deviantart.net/20eb/f/2015/030/6/f/_minflat__dark_material_design_wallpaper__4k__by_dakoder-d8fjqzu.jpg')";
-			images[1] = "url('http://hdwallpapersd.com/wp-content/uploads/2015/09/Blue-Nature-Background.jpg')";
-			images[2] = "url('http://e2ua.com/data/wallpapers/29/WDF_767877.jpg')";
-			images[3] = "url('https://wallpaperscraft.com/image/nature_mountains_sky_lake_clouds_81150_2048x1152.jpg')";
-			images[4] = "url('http://www.twitrcovers.com/wp-content/uploads/2013/04/Mountains-Clouds-Landscapes-l.jpg')";
-			images[5] = "url('http://www.wallpapersonview.com/wallpapers/4/landscape_wonderful_nature_quality_mountain_background_picture-120.jpg')";
-			images[6] = "url('http://www.amazingwallpaperz.com/wp-content/uploads/Scenic-Mountain-Background-HD-Wallpapers.jpg')";
-			images[7] = "url('http://cdn.pcwallart.com/images/wyoming-mountains-wallpaper-3.jpg')";
+			images[0] = "url('./img/bg1.png')";
+			images[1] = "url('./img/bg2.png')";
+			images[2] = "url('./img/bg3.png')";
+			images[3] = "url('./img/bg4.png')";
+
+
 			// Set the interval in milliseconds
-			setInterval(function() {changeImage()},5000);
-			x = 0;
-			function changeImage() {
-				document.body.style.backgroundImage = images[x];
-				if (x<7) {
-					x+=1;
-				}
+			$("#backgroundChanger").PhotoFlip({'interval' : 1000}, images);
 
-				else if (x=8) {
-					x=0;
-				}
-
-			}
-		</script>
-		<script>
 			!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
 		</script>
 	</body>
