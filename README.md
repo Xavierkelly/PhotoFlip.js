@@ -54,6 +54,7 @@ Options are specified in the initialization method.
 $("#backgroundChanger").PhotoFlip({
 	'interval' : 1000,
 	'backgroundSize' : 'contain',
-	'repeat' : 'repeat'
+	'repeat' : 'no-repeat',
+	'transitionTime' : '0.6s'
 }, images);
 ```
