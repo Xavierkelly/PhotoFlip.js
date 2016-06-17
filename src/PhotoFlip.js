@@ -1,5 +1,5 @@
 (function($) {
-    console.log('PhotoFlip.Js has Properly loaded');
+    console.log('PhotoFlip.Js by Xavier Kelly has Properly loaded Enjoy');
     $.fn.cycleImage = function(){
         $(this).css('background-image', images[(imagePosition + 1) >= images.length ? imagePosition = 0 : ++imagePosition]);
     }
