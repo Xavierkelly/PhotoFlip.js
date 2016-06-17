@@ -1,5 +1,5 @@
 (function($) {
-
+    console.log('PhotoFlip.Js has Properly loaded');
     $.fn.cycleImage = function(){
         $(this).css('background-image', images[(imagePosition + 1) >= images.length ? imagePosition = 0 : ++imagePosition]);
     }
