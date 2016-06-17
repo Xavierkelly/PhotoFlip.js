@@ -34,10 +34,13 @@ button {
 	font-weight: bold;
 	border-style: none;
 	transition: 0.3s;
+	border-radius: 4px;
+	border-bottom:#5c8c8c;
 }
 
 button:hover {
 	background-color: #638f90;
+	border-bottom: #4f7273;
 }
 
 #backgroundChanger {
