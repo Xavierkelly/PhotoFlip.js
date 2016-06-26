@@ -40,11 +40,12 @@ That's it!
 
 ### Options
 
-Three options are available for your customisation:
+Four options are available for your customisation:
 
 - 'interval' : The interval of time between changes. Declared in milliseconds (3000 is 3 seconds).
 - 'backgroundSize' : CSS background size property. 
 - 'repeat' : CSS background repeat property. 
+- 'transitionTime' : Background image transitions time
 
 ###### Example
 
