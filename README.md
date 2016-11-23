@@ -1,7 +1,7 @@
 # PhotoFlip
 A simple jquery plugin that allows you to dynamically change the background image of a container or div by just stating the images in an array and the id of the background you want to change. Please star, give feedback and updates to make PhotoFlip better.
 ###Demo
-![PhotoFlip.js ScreenShot](http://www.kelly.tech/static/img/photoflip.png "PhotoFlip.js ScreenShot")
+![PhotoFlip.js ScreenShot](http://www.k-r.tech/static/img/photoflip.png "PhotoFlip.js ScreenShot")
 
 [View Demo Site](http://photoflip.kelly.tech/)
 
