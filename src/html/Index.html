@@ -10,8 +10,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="../css/style.css">
 	</head>
-		<body id="backgroundChanger">
-
+	<body id="backgroundChanger">
 		<div class="navbar">
 			<a  href="http://www.kelly.tech">
 				<img src="../../img/kellytechlogo.png" alt="Kelly.Tech Logo">
@@ -75,8 +74,7 @@
 			images[2] = "url('../../img/bg3.png')";
 			images[3] = "url('../../img/bg4.png')";
 
-
-			// Set the interval in milliseconds
+			// Set the interval in milliseconds and Transtion time in seconds
 			$("#backgroundChanger").PhotoFlip({'interval' : 1000,  'transitionTime' : '0.6s'}, images);
 
 			!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
